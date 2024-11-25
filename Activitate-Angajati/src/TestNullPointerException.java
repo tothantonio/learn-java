@@ -5,6 +5,7 @@ public class TestNullPointerException {
             zi.getNume();
         } catch (NullPointerException e) {
             System.out.println("A fost prinsa o excepție de tip NullPointerException: " + e.getMessage());
+            //e.printStackTrace();
         }
     }
 }
