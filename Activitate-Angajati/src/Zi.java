@@ -11,19 +11,7 @@ public class Zi {
         return nume;
     }
 
-    public void setNume(String nume) {
-        this.nume = nume;
-    }
-
     public boolean esteLucratoare() {
         return lucratoare;
-    }
-
-    public void setLucratoare() {
-        this.lucratoare = true;
-    }
-
-    public void setNelucratoare() {
-        this.lucratoare = false;
     }
 }

@@ -12,26 +12,19 @@ public class CalendarLucru {
         zile[6] = new Zi("Duminica", false);
     }
 
-    public void setLucratoare(String numeZi) {
-        for (Zi zi : zile) {
-            if (zi.getNume().equals(numeZi)) {
-                zi.setLucratoare();
-            }
-        }
-    }
-
-    public void setNelucratoare(String numeZi) {
-        for (Zi zi : zile) {
-            if (zi.getNume().equals(numeZi)) {
-                zi.setNelucratoare();
-            }
-        }
-    }
-
     public boolean esteLucratoare(String numeZi) {
         for (Zi zi : zile) {
             if (zi.getNume().equals(numeZi)) {
                 return zi.esteLucratoare();
+            }
+        }
+        return false;
+    }
+
+    public boolean esteZiValida(String zi) {
+        for (Zi z : zile) {
+            if (z.getNume().equals(zi)) {
+                return true;
             }
         }
         return false;

@@ -4,5 +4,6 @@ public class Main {
         lucrator1.lucreaza("Luni");
         lucrator1.lucreaza("Sambata");
         lucrator1.lucreaza("Duminica");
+        lucrator1.lucreaza("OOP");
     }
 }
